@@ -1,0 +1,3 @@
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\classes\debug
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\graphview-3.1-782c058dac6308b844bc989d9db041e031b070e6.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-c45068392dd43f4eac0cd73b0160d7dd95189c01.jar
