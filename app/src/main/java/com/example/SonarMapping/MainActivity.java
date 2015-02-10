@@ -5,6 +5,7 @@ import com.jjoe64.graphview.GraphView.GraphViewData;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.SurfaceView;
 import android.widget.TextView;
 
 import OrientationSensing.OrientationHelper;
@@ -23,10 +24,9 @@ public class MainActivity extends Activity {
         OrientationUpdateView myOrientationView = new OrientationUpdateView(directionView, pitchView);
         mOrientationHelper.registerListener(myOrientationView);
 
-        //TODO: only use the surface view assigned to the screen.
         // Create our Preview view and set it as the content of our activity.
-        //mPreview = new Preview(this);
-        //setContentView(mPreview);
+        SurfaceView mSurfaceView = (SurfaceView) findViewById(R.id.surfaceView);
+        mPreview = new Preview( mSurfaceView);
 
 
 	}

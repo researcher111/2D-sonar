@@ -12,18 +12,22 @@ import java.util.List;
  * /android-2/samples/ApiDemos/src/com/example/android/apis/graphics/CameraPreview.java.shtml
  * Created by dggra_000 on 2/9/2015.
  */
-class Preview extends SurfaceView implements SurfaceHolder.Callback {
+class Preview implements SurfaceHolder.Callback {
     SurfaceHolder mHolder;
     Camera mCamera;
-
-    Preview(Context context) {
-        super(context);
+    SurfaceView mSurfaceView;
+    SurfaceHolder mSurfaceHolder;
+    Preview(SurfaceView surfaceView) {
 
         // Install a SurfaceHolder.Callback so we get notified when the
         // underlying surface is created and destroyed.
-        mHolder = getHolder();
-        mHolder.addCallback(this);
-        mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+
+        mSurfaceView = surfaceView ;
+        mSurfaceHolder = mSurfaceView.getHolder();
+        mSurfaceHolder.addCallback(this);
+       // mHolder = getHolder();
+        //mHolder.addCallback(this);
+        //mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
@@ -49,20 +53,20 @@ class Preview extends SurfaceView implements SurfaceHolder.Callback {
     public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
         // Now that the size is known, set up the camera parameters and begin
         // the preview.
-       // Camera.Parameters parameters = mCamera.getParameters();
+        //Camera.Parameters parameters = mCamera.getParameters();
         //parameters.setPreviewSize(w, h);
         //mCamera.setParameters(parameters);
         //mCamera.startPreview();
 
-        Camera.Parameters parameters = mCamera.getParameters();
-        List<Camera.Size> previewSizes = parameters.getSupportedPreviewSizes();
+       Camera.Parameters parameters = mCamera.getParameters();
+       List<Camera.Size> previewSizes = parameters.getSupportedPreviewSizes();
 
         // You need to choose the most appropriate previewSize for your app
-        Camera.Size previewSize = previewSizes.get(0);
+        Camera.Size previewSize = previewSizes.get(9);
 
         parameters.setPreviewSize(previewSize.width, previewSize.height);
         mCamera.setParameters(parameters);
-        mCamera.startPreview();
+       mCamera.startPreview();
     }
 
 }
