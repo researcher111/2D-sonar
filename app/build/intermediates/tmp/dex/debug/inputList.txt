@@ -1,3 +1,6 @@
 C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\classes\debug
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\graphview-3.1-782c058dac6308b844bc989d9db041e031b070e6.jar
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-c45068392dd43f4eac0cd73b0160d7dd95189c01.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e71b3d94a336f136a0d3464e5240958eb26a97d9.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-798e68a6afb7a8c7c70b326dd40608b3620e98ee.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-4064259c4137f03332bb5129e5b72698727d0232.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-4d54b4acd721d36b727f544df4fa98ef74f72b52.jar
+C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-c2fe03334fc5cbb8a2063f655b32cbeeb7553dcc.jar

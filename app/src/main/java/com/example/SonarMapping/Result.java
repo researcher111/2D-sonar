@@ -2,15 +2,13 @@ package com.example.SonarMapping;
 
 public class Result {
 	public double distance;
-	public double xcorrHeight;
+
 	public short[] signal; 
-	public double[] xcorr;
+
 
 	
-	public Result(double distance, double xcorrHeight, short[] signal, double[] xcorr){
+	public Result(double distance, short[] signal){
 		this.distance = distance;
-		this.xcorrHeight = xcorrHeight;
 		this.signal = signal;
-		this.xcorr = xcorr;
 	}
 }

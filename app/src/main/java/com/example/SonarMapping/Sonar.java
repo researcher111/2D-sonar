@@ -1,12 +1,5 @@
 package com.example.SonarMapping;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import DSP.DSP;
-import android.content.Context;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioRecord;
@@ -15,93 +8,107 @@ import android.media.MediaRecorder.AudioSource;
 import android.os.Environment;
 import android.util.Log;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import DSP.DSP;
+
 /*
  * Thread to manage live recording/playback of voice input from the device's microphone.
  */
-public class Sonar extends Thread {
-
-	public int threshold = 10000;
-	public int thresholdPeak = 0;
-	public double maxDistanceMeters = 5;
+public class Sonar {
+    public Result result;
+    private BlockingQueue<Runnable> dispatchQueue
+            = new LinkedBlockingQueue<Runnable>();
 	private final int sampleRate = 44100;
-	public static Result result;
-	// Chirp Configurations
-	public static double f0 = 4000;
-	public static double t1 = 0.01;
-	public static double phase = 0;
-	private final int numSamples = (int) Math.round(t1 * sampleRate);
-	private final int bufferSize = 32768;
-	public static boolean stopped = false;
-	public static double distance;
-	public static double xcorrHeight;
-	public static int pulseTrack = 10;
-	public static int delay = 0;
-	public int deadZoneLength = 60;// (int)(sampleRate*t1/6);
-	private static String AUDIO_FILE_PATH = "";
-	private Context context;
-	private TempSense tempSense;
+    private final int phase =0;
+    private final int f0 = 4000;
+	private final int bufferSize = 8000;//32768;
+    private final double threshold =0;
+    private boolean stopped =false;
 	/**
 	 * Give the thread high priority so that it's not canceled unexpectedly, and
 	 * start it
 	 * 
 	 *
 	 */
-	public Sonar(int thresholdPeak, Context context) {
-		this.thresholdPeak = thresholdPeak;
-		this.context = context;
-		this.tempSense = new TempSense(context);
-		android.os.Process
-				.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
-		// start();
+	public Sonar() {
+
+		android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
+        new Thread(
+                new Runnable()
+                {
+                    @Override
+                    public void run()
+                    {
+                        while (true)
+                        {
+                            try
+                            {
+                                dispatchQueue.take().run();
+                            } catch (InterruptedException e)
+                            {   // okay, just terminate the dispatcher
+                            }
+                        }
+                    }
+                }
+        ).start();
 	}
+    public void scheduleSensing() throws InterruptedException
+    {
+        dispatchQueue.put(
+                new Runnable()
+                {
+                    public void run() {
+                        result = getResult();
+                    }
+                }
+        );
+    }
 
-	@Override
-	public void run() {
-		this.thresholdPeak = thresholdPeak;
-		Log.i("Audio", "Running Audio Thread");
-		AudioRecord recorder = null;
-		AudioTrack track = null;
-		short[] buffer = new short[bufferSize];
-		short[] pulse = DSP.ConvertToShort(
-				DSP.sineWave(phase, f0, bufferSize, sampleRate));
-		int ix = 0;
 
-		int N = AudioRecord.getMinBufferSize(sampleRate,
-				AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
-		recorder = new AudioRecord(AudioSource.MIC, sampleRate,
-				AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT,
-				bufferSize * 2);
-		
-//		track = new AudioTrack(AudioManager.STREAM_MUSIC, sampleRate,
-//				AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT,
-//				bufferSize * 2, AudioTrack.MODE_STREAM);
-		
-		
-		track = new AudioTrack(AudioManager.STREAM_MUSIC, sampleRate,
-				AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT,
-				bufferSize * 2, AudioTrack.MODE_STREAM);
 
-		track.setStereoVolume(AudioTrack.getMaxVolume(), AudioTrack.getMaxVolume());
-		//writeStringToTextFile(Arrays.toString(pulse), AUDIO_FILE_PATH
-		//		+ "pulse.txt");
-		// short[] buffer = buffers[ix++ % buffers.length];
-		try {
-			track.write(pulse, 0, pulse.length);
-			track.play();
-            recorder.startRecording();
-			recorder.read(buffer, 0, buffer.length);
+	public Result getResult() {
+            Log.i("Audio", "Running Audio Thread");
+            AudioRecord recorder = null;
+            AudioTrack track = null;
+            short[] buffer = new short[bufferSize];
+            short[] pulse = DSP.ConvertToShort(
+                    DSP.sineWave(phase, f0, bufferSize, sampleRate));
+            int ix = 0;
 
-		} finally {
-			track.stop();
-			track.release();
-			recorder.stop();
-			recorder.release();
-		}
+            int N = AudioRecord.getMinBufferSize(sampleRate,
+                    AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            recorder = new AudioRecord(AudioSource.MIC, sampleRate,
+                    AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT,
+                    bufferSize * 2);
 
-		//writeStringToTextFile(Arrays.toString(buffer), AUDIO_FILE_PATH
-		//		+ "buffer" + (pulseTrack++) + ".txt");
-		result = FilterAndClean.Distance(buffer, pulse, sampleRate, threshold,
-				maxDistanceMeters, deadZoneLength, thresholdPeak, this.tempSense.tempature);
+
+            track = new AudioTrack(AudioManager.STREAM_MUSIC, sampleRate,
+                    AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT,
+                    bufferSize * 2, AudioTrack.MODE_STREAM);
+
+            track.setStereoVolume(AudioTrack.getMaxVolume(), AudioTrack.getMaxVolume());
+
+            try {
+                track.write(pulse, 0, pulse.length);
+                track.play();
+                recorder.startRecording();
+                recorder.read(buffer, 0, buffer.length);
+
+            } finally {
+                track.stop();
+                track.release();
+                recorder.stop();
+                recorder.release();
+            }
+
+            return FilterAndClean.Distance(buffer, pulse, sampleRate, threshold);
+
 
 	}
 
@@ -111,37 +118,9 @@ public class Sonar extends Thread {
 	 * 
 	 */
 	private void close() {
-		stopped = true;
+        stopped = true;
 	}
 
-	/*
-	 * private void emailFile(String s){
-	 * 
-	 * Intent i = new Intent(Intent.ACTION_SEND); i.setType("message/rfc822");
-	 * i.putExtra(Intent.EXTRA_EMAIL , new String[]{"dggraham@email.wm.edu"});
-	 * i.putExtra(Intent.EXTRA_SUBJECT, "subject of email");
-	 * i.putExtra(Intent.EXTRA_TEXT , s); try {
-	 * context.startActivity(Intent.createChooser(i, "Send mail...")); } catch
-	 * (android.content.ActivityNotFoundException ex) { Toast.makeText(context,
-	 * "There are no email clients installed.", Toast.LENGTH_SHORT).show(); } }
-	 */
-
-	// this method writes the pulse array to a file
-	/*
-	 * private void writeStringToTextFile(String s, String f) { //File sdCard =
-	 * Environment.get .getExternalStorageDirectory(); //File dir = new
-	 * File(sdCard.getAbsolutePath()); //dir.mkdirs(); //File file = new
-	 * File(f); Context ctx = this.context; try { FileOutputStream f1 =
-	 * ctx.openFileOutput(f, Context.MODE_PRIVATE); PrintStream p = new
-	 * PrintStream(f1); p.print(s); p.close(); f1.close(); } catch
-	 * (FileNotFoundException e) {
-	 * 
-	 * } catch (IOException e) {
-	 * 
-	 * }
-	 * 
-	 * }
-	 */
 
 	public boolean isExternalStorageWritable() {
 		String state = Environment.getExternalStorageState();

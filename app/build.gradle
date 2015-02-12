@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.sonarsimple"
-        minSdkVersion 8
+        minSdkVersion 10
         targetSdkVersion 17
     }
 
@@ -20,5 +20,5 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:18.0.0'
-    compile files('libs/graphview-3.1.jar')
+    compile 'com.jjoe64:graphview:4.0.0'
 }
