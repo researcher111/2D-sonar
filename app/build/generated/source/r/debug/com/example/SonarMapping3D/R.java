@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.SonarMapping;
+package com.example.SonarMapping3D;
 
 public final class R {
     public static final class anim {
@@ -867,11 +867,13 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f080025;
         public static final int always=0x7f080013;
         public static final int beginning=0x7f08000f;
+        public static final int chart=0x7f080042;
         public static final int checkbox=0x7f08002d;
         public static final int collapseActionView=0x7f080014;
+        public static final int countSamples=0x7f080040;
         public static final int default_activity_button=0x7f080028;
         public static final int dialog=0x7f080018;
-        public static final int direction=0x7f08003f;
+        public static final int direction=0x7f08003e;
         public static final int disableHome=0x7f080009;
         public static final int dropdown=0x7f080019;
         public static final int edit_query=0x7f080030;
@@ -883,7 +885,6 @@ containing a value of this type.
         public static final int icon=0x7f08002a;
         public static final int ifRoom=0x7f080015;
         public static final int image=0x7f080027;
-        public static final int layout1=0x7f08003d;
         public static final int listMode=0x7f080006;
         public static final int list_item=0x7f080029;
         public static final int mainGrid=0x7f08003c;
@@ -891,10 +892,11 @@ containing a value of this type.
         public static final int never=0x7f080016;
         public static final int none=0x7f080012;
         public static final int normal=0x7f080007;
-        public static final int pitch=0x7f08003e;
+        public static final int pitch=0x7f08003d;
         public static final int progress_circular=0x7f080004;
         public static final int progress_horizontal=0x7f080005;
         public static final int radio=0x7f08002f;
+        public static final int reading=0x7f08003f;
         public static final int search_badge=0x7f080032;
         public static final int search_bar=0x7f080031;
         public static final int search_button=0x7f080033;
@@ -911,9 +913,7 @@ containing a value of this type.
         public static final int showTitle=0x7f08000d;
         public static final int split_action_bar=0x7f08001e;
         public static final int submit_area=0x7f080039;
-        public static final int surfaceView=0x7f080042;
         public static final int tabMode=0x7f080008;
-        public static final int textView=0x7f080040;
         public static final int title=0x7f08002b;
         public static final int top_action_bar=0x7f080020;
         public static final int up=0x7f080021;
@@ -1140,25 +1140,25 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.example.sonarsimple:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.example.sonarsimple:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.example.sonarsimple:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.sonarsimple:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.example.sonarsimple:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.example.sonarsimple:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.example.sonarsimple:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.example.sonarsimple:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.example.sonarsimple:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.sonarsimple:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.example.sonarsimple:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.example.sonarsimple:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.example.sonarsimple:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.example.sonarsimple:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.example.sonarsimple:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.example.sonarsimple:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.sonarsimple:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.example.sonarsimple:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.example.sonarsimple:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.example.sonarsimple3D:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.example.sonarsimple3D:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.example.sonarsimple3D:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.sonarsimple3D:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.example.sonarsimple3D:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.example.sonarsimple3D:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.example.sonarsimple3D:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.example.sonarsimple3D:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.example.sonarsimple3D:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.sonarsimple3D:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.example.sonarsimple3D:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.example.sonarsimple3D:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.example.sonarsimple3D:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.example.sonarsimple3D:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.example.sonarsimple3D:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.example.sonarsimple3D:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.sonarsimple3D:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.example.sonarsimple3D:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.example.sonarsimple3D:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -1188,17 +1188,17 @@ containing a value of this type.
             0x7f01004d, 0x7f01004e, 0x7f01004f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#background}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:background
+          @attr name com.example.sonarsimple3D:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1206,11 +1206,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.sonarsimple:backgroundSplit
+          @attr name com.example.sonarsimple3D:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1218,21 +1218,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.sonarsimple:backgroundStacked
+          @attr name com.example.sonarsimple3D:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:customNavigationLayout
+          @attr name com.example.sonarsimple3D:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1249,21 +1249,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.example.sonarsimple:displayOptions
+          @attr name com.example.sonarsimple3D:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:divider
+          @attr name com.example.sonarsimple3D:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#height}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1275,41 +1275,41 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:height
+          @attr name com.example.sonarsimple3D:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:homeLayout
+          @attr name com.example.sonarsimple3D:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:icon
+          @attr name com.example.sonarsimple3D:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:indeterminateProgressStyle
+          @attr name com.example.sonarsimple3D:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1321,21 +1321,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:itemPadding
+          @attr name com.example.sonarsimple3D:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:logo
+          @attr name com.example.sonarsimple3D:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1349,11 +1349,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.sonarsimple:navigationMode
+          @attr name com.example.sonarsimple3D:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1365,21 +1365,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:progressBarPadding
+          @attr name com.example.sonarsimple3D:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:progressBarStyle
+          @attr name com.example.sonarsimple3D:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1389,21 +1389,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:subtitle
+          @attr name com.example.sonarsimple3D:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:subtitleTextStyle
+          @attr name com.example.sonarsimple3D:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#title}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -1413,17 +1413,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:title
+          @attr name com.example.sonarsimple3D:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:titleTextStyle
+          @attr name com.example.sonarsimple3D:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -1451,13 +1451,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBar com.example.sonarsimple:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay com.example.sonarsimple:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor com.example.sonarsimple:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor com.example.sonarsimple:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor com.example.sonarsimple:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor com.example.sonarsimple:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar com.example.sonarsimple:windowSplitActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBar com.example.sonarsimple3D:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowActionBarOverlay com.example.sonarsimple3D:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMajor com.example.sonarsimple3D:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedHeightMinor com.example.sonarsimple3D:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMajor com.example.sonarsimple3D:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowFixedWidthMinor com.example.sonarsimple3D:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBarWindow_windowSplitActionBar com.example.sonarsimple3D:windowSplitActionBar}</code></td><td></td></tr>
            </table>
            @see #ActionBarWindow_windowActionBar
            @see #ActionBarWindow_windowActionBarOverlay
@@ -1472,7 +1472,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010054, 0x7f010055, 0x7f010056
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1482,11 +1482,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowActionBar
+          @attr name com.example.sonarsimple3D:windowActionBar
         */
         public static final int ActionBarWindow_windowActionBar = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1496,11 +1496,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowActionBarOverlay
+          @attr name com.example.sonarsimple3D:windowActionBarOverlay
         */
         public static final int ActionBarWindow_windowActionBarOverlay = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1515,11 +1515,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowFixedHeightMajor
+          @attr name com.example.sonarsimple3D:windowFixedHeightMajor
         */
         public static final int ActionBarWindow_windowFixedHeightMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1534,11 +1534,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowFixedHeightMinor
+          @attr name com.example.sonarsimple3D:windowFixedHeightMinor
         */
         public static final int ActionBarWindow_windowFixedHeightMinor = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1553,11 +1553,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowFixedWidthMajor
+          @attr name com.example.sonarsimple3D:windowFixedWidthMajor
         */
         public static final int ActionBarWindow_windowFixedWidthMajor = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1572,11 +1572,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowFixedWidthMinor
+          @attr name com.example.sonarsimple3D:windowFixedWidthMinor
         */
         public static final int ActionBarWindow_windowFixedWidthMinor = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#windowSplitActionBar}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#windowSplitActionBar}
           attribute's value can be found in the {@link #ActionBarWindow} array.
 
 
@@ -1586,7 +1586,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:windowSplitActionBar
+          @attr name com.example.sonarsimple3D:windowSplitActionBar
         */
         public static final int ActionBarWindow_windowSplitActionBar = 2;
         /** Attributes that can be used with a ActionMenuItemView.
@@ -1619,11 +1619,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.example.sonarsimple:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.example.sonarsimple:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.example.sonarsimple:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.sonarsimple:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.example.sonarsimple:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.example.sonarsimple3D:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.example.sonarsimple3D:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.example.sonarsimple3D:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.sonarsimple3D:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.example.sonarsimple3D:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -1636,17 +1636,17 @@ containing a value of this type.
             0x7f010049
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#background}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:background
+          @attr name com.example.sonarsimple3D:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -1654,11 +1654,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.sonarsimple:backgroundSplit
+          @attr name com.example.sonarsimple3D:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#height}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -1670,27 +1670,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:height
+          @attr name com.example.sonarsimple3D:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:subtitleTextStyle
+          @attr name com.example.sonarsimple3D:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:titleTextStyle
+          @attr name com.example.sonarsimple3D:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -1699,8 +1699,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.sonarsimple:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.sonarsimple:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.sonarsimple3D:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.sonarsimple3D:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -1709,17 +1709,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010057, 0x7f010058
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:expandActivityOverflowButtonDrawable
+          @attr name com.example.sonarsimple3D:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -1729,7 +1729,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:initialActivityCount
+          @attr name com.example.sonarsimple3D:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -1738,7 +1738,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps com.example.sonarsimple:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps com.example.sonarsimple3D:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -1746,14 +1746,14 @@ containing a value of this type.
             0x7f010059
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.example.sonarsimple:textAllCaps
+          @attr name com.example.sonarsimple3D:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a GraphViewXML.
@@ -1763,10 +1763,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #GraphViewXML_android_title android:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #GraphViewXML_seriesColor com.example.sonarsimple:seriesColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #GraphViewXML_seriesData com.example.sonarsimple:seriesData}</code></td><td></td></tr>
-           <tr><td><code>{@link #GraphViewXML_seriesTitle com.example.sonarsimple:seriesTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #GraphViewXML_seriesType com.example.sonarsimple:seriesType}</code></td><td></td></tr>
+           <tr><td><code>{@link #GraphViewXML_seriesColor com.example.sonarsimple3D:seriesColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #GraphViewXML_seriesData com.example.sonarsimple3D:seriesData}</code></td><td></td></tr>
+           <tr><td><code>{@link #GraphViewXML_seriesTitle com.example.sonarsimple3D:seriesTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #GraphViewXML_seriesType com.example.sonarsimple3D:seriesType}</code></td><td></td></tr>
            </table>
            @see #GraphViewXML_android_title
            @see #GraphViewXML_seriesColor
@@ -1785,7 +1785,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int GraphViewXML_android_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#seriesColor}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#seriesColor}
           attribute's value can be found in the {@link #GraphViewXML} array.
 
 
@@ -1796,11 +1796,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:seriesColor
+          @attr name com.example.sonarsimple3D:seriesColor
         */
         public static final int GraphViewXML_seriesColor = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#seriesData}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#seriesData}
           attribute's value can be found in the {@link #GraphViewXML} array.
 
 
@@ -1810,11 +1810,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:seriesData
+          @attr name com.example.sonarsimple3D:seriesData
         */
         public static final int GraphViewXML_seriesData = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#seriesTitle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#seriesTitle}
           attribute's value can be found in the {@link #GraphViewXML} array.
 
 
@@ -1824,11 +1824,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:seriesTitle
+          @attr name com.example.sonarsimple3D:seriesTitle
         */
         public static final int GraphViewXML_seriesTitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#seriesType}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#seriesType}
           attribute's value can be found in the {@link #GraphViewXML} array.
 
 
@@ -1838,7 +1838,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:seriesType
+          @attr name com.example.sonarsimple3D:seriesType
         */
         public static final int GraphViewXML_seriesType = 2;
         /** Attributes that can be used with a LinearLayoutICS.
@@ -1847,9 +1847,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutICS_divider com.example.sonarsimple:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_dividerPadding com.example.sonarsimple:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutICS_showDividers com.example.sonarsimple:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_divider com.example.sonarsimple3D:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_dividerPadding com.example.sonarsimple3D:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutICS_showDividers com.example.sonarsimple3D:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutICS_divider
            @see #LinearLayoutICS_dividerPadding
@@ -1859,17 +1859,17 @@ containing a value of this type.
             0x7f010046, 0x7f01005e, 0x7f01005f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutICS} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:divider
+          @attr name com.example.sonarsimple3D:divider
         */
         public static final int LinearLayoutICS_divider = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutICS} array.
 
 
@@ -1881,11 +1881,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:dividerPadding
+          @attr name com.example.sonarsimple3D:dividerPadding
         */
         public static final int LinearLayoutICS_dividerPadding = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutICS} array.
 
 
@@ -1900,7 +1900,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.sonarsimple:showDividers
+          @attr name com.example.sonarsimple3D:showDividers
         */
         public static final int LinearLayoutICS_showDividers = 1;
         /** Attributes that can be used with a MenuGroup.
@@ -1969,9 +1969,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.example.sonarsimple:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.example.sonarsimple:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.example.sonarsimple:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.example.sonarsimple3D:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.example.sonarsimple3D:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.example.sonarsimple3D:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -1985,7 +1985,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.example.sonarsimple:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.example.sonarsimple3D:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -2013,17 +2013,17 @@ containing a value of this type.
             0x7f010063
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:actionLayout
+          @attr name com.example.sonarsimple3D:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2033,11 +2033,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:actionProviderClass
+          @attr name com.example.sonarsimple3D:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2047,7 +2047,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:actionViewClass
+          @attr name com.example.sonarsimple3D:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -2129,7 +2129,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -2145,7 +2145,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.example.sonarsimple:showAsAction
+          @attr name com.example.sonarsimple3D:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -2233,8 +2233,8 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.sonarsimple:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.example.sonarsimple:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.sonarsimple3D:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.example.sonarsimple3D:queryHint}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_imeOptions
            @see #SearchView_android_inputType
@@ -2265,7 +2265,7 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -2275,11 +2275,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:iconifiedByDefault
+          @attr name com.example.sonarsimple3D:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -2289,7 +2289,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:queryHint
+          @attr name com.example.sonarsimple3D:queryHint
         */
         public static final int SearchView_queryHint = 4;
         /** Attributes that can be used with a Spinner.
@@ -2304,10 +2304,10 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.example.sonarsimple:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView com.example.sonarsimple:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt com.example.sonarsimple:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode com.example.sonarsimple:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.example.sonarsimple3D:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView com.example.sonarsimple3D:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.example.sonarsimple3D:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.example.sonarsimple3D:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownHorizontalOffset
            @see #Spinner_android_dropDownSelector
@@ -2362,7 +2362,7 @@ containing a value of this type.
         */
         public static final int Spinner_android_popupBackground = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -2372,31 +2372,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:disableChildrenWhenDisabled
+          @attr name com.example.sonarsimple3D:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:popupPromptView
+          @attr name com.example.sonarsimple3D:popupPromptView
         */
         public static final int Spinner_popupPromptView = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#prompt}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:prompt
+          @attr name com.example.sonarsimple3D:prompt
         */
         public static final int Spinner_prompt = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -2409,7 +2409,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.sonarsimple:spinnerMode
+          @attr name com.example.sonarsimple3D:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
         /** Attributes that can be used with a Theme.
@@ -2418,12 +2418,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.example.sonarsimple:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.example.sonarsimple:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.example.sonarsimple:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.example.sonarsimple:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.example.sonarsimple:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.example.sonarsimple:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.example.sonarsimple3D:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.example.sonarsimple3D:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.example.sonarsimple3D:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.example.sonarsimple3D:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.example.sonarsimple3D:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.example.sonarsimple3D:popupMenuStyle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionDropDownStyle
            @see #Theme_dropdownListPreferredItemHeight
@@ -2437,17 +2437,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01006e, 0x7f01006f
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:actionDropDownStyle
+          @attr name com.example.sonarsimple3D:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -2459,31 +2459,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:dropdownListPreferredItemHeight
+          @attr name com.example.sonarsimple3D:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:listChoiceBackgroundIndicator
+          @attr name com.example.sonarsimple3D:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:panelMenuListTheme
+          @attr name com.example.sonarsimple3D:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -2495,17 +2495,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:panelMenuListWidth
+          @attr name com.example.sonarsimple3D:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.sonarsimple:popupMenuStyle
+          @attr name com.example.sonarsimple3D:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 2;
         /** Attributes that can be used with a View.
@@ -2515,8 +2515,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.example.sonarsimple:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.example.sonarsimple:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.example.sonarsimple3D:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.example.sonarsimple3D:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -2532,7 +2532,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -2544,11 +2544,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:paddingEnd
+          @attr name com.example.sonarsimple3D:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.sonarsimple.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.example.sonarsimple3D.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -2560,7 +2560,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.sonarsimple:paddingStart
+          @attr name com.example.sonarsimple3D:paddingStart
         */
         public static final int View_paddingStart = 1;
     };

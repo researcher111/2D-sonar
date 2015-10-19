@@ -1,6 +1,7 @@
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\classes\debug
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e71b3d94a336f136a0d3464e5240958eb26a97d9.jar
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-798e68a6afb7a8c7c70b326dd40608b3620e98ee.jar
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-4064259c4137f03332bb5129e5b72698727d0232.jar
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-4d54b4acd721d36b727f544df4fa98ef74f72b52.jar
-C:\Users\dggra_000\AndroidstudioProjects\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-c2fe03334fc5cbb8a2063f655b32cbeeb7553dcc.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\classes\debug
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-96a2f24d67427ecde520806d3bd489e232651b06.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-b4b8c4f65dd53ac15d744a519ef391b760095fb1.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-586fa3f8174b6122697e0f42bfbe2d46bc8136a0.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.0-00149df8a41d32a6c41792e166cb9ee5932a0763.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-8a78963b81f30c2e22c5d1a37ed013cafe3438b7.jar
+C:\Users\Daniel\OneDrive\Research\Android-Studio-SonarApp\3DSonarSimple\app\build\intermediates\pre-dexed\debug\classes-59738c94661605cdd7ade028f0523d0d75d88905.jar

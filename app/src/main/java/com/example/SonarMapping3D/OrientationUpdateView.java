@@ -1,4 +1,4 @@
-package com.example.SonarMapping;
+package com.example.SonarMapping3D;
 import android.widget.TextView;
 
 import OrientationSensing.OrientationHelper;
@@ -27,8 +27,8 @@ public class OrientationUpdateView  implements  OrientationHelper.Listener {
         mXDelta = xDelta;
         mYDelta = yDelta;
 
-        mDirectionView.setText(Float.toString(heading));
-        mPitchView.setText(Float.toString(mPitch));
+        mDirectionView.setText(MainActivity.df.format(heading));
+        mPitchView.setText(MainActivity.df.format(mPitch));
 
 
     }

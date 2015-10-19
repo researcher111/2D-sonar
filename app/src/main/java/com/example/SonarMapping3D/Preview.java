@@ -1,7 +1,6 @@
-package com.example.SonarMapping;
+package com.example.SonarMapping3D;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.content.Context;
 import android.hardware.Camera;
 
 import java.util.List;

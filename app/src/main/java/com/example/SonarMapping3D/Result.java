@@ -1,4 +1,4 @@
-package com.example.SonarMapping;
+package com.example.SonarMapping3D;
 
 public class Result {
 	public double distance;

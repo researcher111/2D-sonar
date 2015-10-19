@@ -1,4 +1,4 @@
-package com.example.SonarMapping;
+package com.example.SonarMapping3D;
 
 import android.content.Context;
 import android.hardware.Sensor;
